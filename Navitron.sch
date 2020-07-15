@@ -4013,6 +4013,7 @@ Created by Upverter.com</description>
 <part name="R21" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="2.2k"/>
 <part name="U$1" library="MyLib" deviceset="MYSWITCH" device=""/>
 <part name="U$2" library="MyLib" deviceset="MYSWITCH" device=""/>
+<part name="R22" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="470"/>
 </parts>
 <sheets>
 <sheet>
@@ -4607,6 +4608,10 @@ I_CHG = 500mA</text>
 <attribute name="NAME" x="139.7" y="14.224" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="139.7" y="12.192" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
+<instance part="R22" gate="R1" x="53.34" y="-53.34" smashed="yes">
+<attribute name="NAME" x="53.34" y="-51.816" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="53.34" y="-54.864" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4941,14 +4946,14 @@ I_CHG = 500mA</text>
 <pinref part="R21" gate="R1" pin="2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="TO_T2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="T2" gate="G$1" pin="B"/>
 <wire x1="220.98" y1="63.5" x2="218.44" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="TO_T1" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="T1" gate="G$1" pin="B"/>
@@ -5281,7 +5286,7 @@ I_CHG = 500mA</text>
 <label x="149.86" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="CHAR_LED_VIN" class="0">
 <segment>
 <pinref part="CHARGING" gate="G$1" pin="A"/>
 <wire x1="106.68" y1="43.18" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
@@ -5290,7 +5295,7 @@ I_CHG = 500mA</text>
 <wire x1="96.52" y1="40.64" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="STAT" class="0">
 <segment>
 <pinref part="CHARGING" gate="G$1" pin="C"/>
 <wire x1="106.68" y1="50.8" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
@@ -5298,7 +5303,7 @@ I_CHG = 500mA</text>
 <wire x1="106.68" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="PROG" class="0">
 <segment>
 <pinref part="R11" gate="R1" pin="2"/>
 <wire x1="142.24" y1="53.34" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
@@ -5398,7 +5403,7 @@ I_CHG = 500mA</text>
 <wire x1="241.3" y1="-58.42" x2="238.76" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="REGOUT" class="0">
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="U2" gate="G$1" pin="REGOUT"/>
@@ -5446,6 +5451,7 @@ I_CHG = 500mA</text>
 <segment>
 <wire x1="58.42" y1="-53.34" x2="60.96" y2="-53.34" width="0.1524" layer="91"/>
 <label x="60.96" y="-53.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="R22" gate="R1" pin="2"/>
 </segment>
 </net>
 <net name="WS1_2" class="0">
@@ -5528,7 +5534,7 @@ I_CHG = 500mA</text>
 <label x="48.26" y="-203.2" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="DO" class="0">
+<net name="WS9_10" class="0">
 <segment>
 <pinref part="WS9" gate="G$1" pin="DO"/>
 <wire x1="45.72" y1="-223.52" x2="48.26" y2="-223.52" width="0.1524" layer="91"/>
@@ -5644,10 +5650,11 @@ I_CHG = 500mA</text>
 <wire x1="223.52" y1="121.92" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="DI_TO_WS" class="0">
 <segment>
 <pinref part="WS1" gate="G$1" pin="DI"/>
 <wire x1="48.26" y1="-53.34" x2="45.72" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="R22" gate="R1" pin="1"/>
 </segment>
 </net>
 <net name="CC2" class="0">
@@ -5726,9 +5733,6 @@ I_CHG = 500mA</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,94.5727,91.4756,J3,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
