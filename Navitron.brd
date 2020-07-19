@@ -2431,13 +2431,13 @@ einem neuen Namen ab.
 <contactref element="JP2" pad="2"/>
 <wire x1="21.742" y1="49" x2="19.477" y2="49" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="LED1.8_2">
 <contactref element="R12" pad="2"/>
 <contactref element="POWER2" pad="C"/>
 <wire x1="52.36" y1="51.267" x2="50.14" y2="53.487" width="0.3048" layer="1"/>
 <wire x1="50.14" y1="53.487" x2="50.14" y2="53.54" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$13">
+<signal name="LED1.8">
 <contactref element="POWER2" pad="A"/>
 <contactref element="JP3" pad="2"/>
 <wire x1="54.44" y1="49.008" x2="53.935" y2="49.513" width="0.3048" layer="1"/>
@@ -2581,14 +2581,14 @@ einem neuen Namen ab.
 <contactref element="WS16" pad="4"/>
 <wire x1="63.20841875" y1="20.526365625" x2="59.1667875" y2="13.095953125" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$14">
+<signal name="SDA_W_2">
 <contactref element="JP5" pad="3"/>
 <contactref element="R16" pad="2"/>
 <wire x1="57.80675" y1="29.516" x2="58.06" y2="29.516" width="0.3048" layer="1"/>
 <wire x1="52" y1="29.15" x2="57.44075" y2="29.15" width="0.3048" layer="1"/>
 <wire x1="57.44075" y1="29.15" x2="57.80675" y2="29.516" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$15">
+<signal name="SDA_W_1">
 <contactref element="JP5" pad="1"/>
 <contactref element="R14" pad="2"/>
 <wire x1="58.06" y1="27.484" x2="57.576" y2="27" width="0.3048" layer="1"/>
@@ -2700,6 +2700,30 @@ einem neuen Namen ab.
 <wire x1="52" y1="47" x2="53.4" y2="45.6" width="0.3048" layer="1"/>
 <wire x1="53.4" y1="45.6" x2="53.4" y2="45" width="0.3048" layer="1"/>
 <wire x1="50.85815" y1="48" x2="51.85815" y2="47" width="0.1524" layer="16"/>
+</signal>
+<signal name="AUX_CL">
+<contactref element="U2" pad="7"/>
+</signal>
+<signal name="AUX_DA">
+<contactref element="U2" pad="21"/>
+</signal>
+<signal name="!CS">
+<contactref element="U2" pad="22"/>
+</signal>
+<signal name="AD0/SD0">
+<contactref element="U2" pad="9"/>
+</signal>
+<signal name="!DCD">
+<contactref element="U5" pad="12"/>
+</signal>
+<signal name="!RI">
+<contactref element="U5" pad="11"/>
+</signal>
+<signal name="!DSR">
+<contactref element="U5" pad="10"/>
+</signal>
+<signal name="!CTS">
+<contactref element="U5" pad="9"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

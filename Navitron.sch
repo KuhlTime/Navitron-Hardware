@@ -5388,14 +5388,14 @@ I_CHG = 500mA</text>
 <wire x1="63.5" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="LED1.8_2" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="POWER2" gate="G$1" pin="C"/>
 <wire x1="241.3" y1="-71.12" x2="241.3" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="LED1.8" class="0">
 <segment>
 <pinref part="POWER2" gate="G$1" pin="A"/>
 <wire x1="241.3" y1="-60.96" x2="241.3" y2="-58.42" width="0.1524" layer="91"/>
@@ -5606,7 +5606,7 @@ I_CHG = 500mA</text>
 <label x="96.52" y="-203.2" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="SDA_W_2" class="0">
 <segment>
 <wire x1="175.26" y1="-66.04" x2="175.26" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="3"/>
@@ -5614,7 +5614,7 @@ I_CHG = 500mA</text>
 <pinref part="R16" gate="R1" pin="2"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="SDA_W_1" class="0">
 <segment>
 <wire x1="137.16" y1="-71.12" x2="137.16" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
@@ -5728,6 +5728,62 @@ I_CHG = 500mA</text>
 <pinref part="U1" gate="G$1" pin="IO23"/>
 <wire x1="63.5" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
 <label x="66.04" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="AUX_CL" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="AUX_CL"/>
+<wire x1="170.18" y1="-109.22" x2="172.72" y2="-109.22" width="0.1524" layer="91"/>
+<label x="172.72" y="-109.22" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="AUX_DA" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="AUX_DA"/>
+<wire x1="170.18" y1="-111.76" x2="172.72" y2="-111.76" width="0.1524" layer="91"/>
+<label x="172.72" y="-111.76" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!CS" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="!CS"/>
+<wire x1="170.18" y1="-114.3" x2="172.72" y2="-114.3" width="0.1524" layer="91"/>
+<label x="172.72" y="-114.3" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="AD0/SD0" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="AD0/SDO"/>
+<wire x1="170.18" y1="-121.92" x2="172.72" y2="-121.92" width="0.1524" layer="91"/>
+<label x="172.72" y="-121.92" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!DCD" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="!DCD"/>
+<wire x1="195.58" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
+<label x="198.12" y="149.86" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!RI" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="!RI"/>
+<wire x1="195.58" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
+<label x="198.12" y="147.32" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!DSR" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="!DSR"/>
+<wire x1="195.58" y1="144.78" x2="198.12" y2="144.78" width="0.1524" layer="91"/>
+<label x="198.12" y="144.78" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="!CTS" class="0">
+<segment>
+<pinref part="U5" gate="U1" pin="!CTS"/>
+<wire x1="195.58" y1="142.24" x2="198.12" y2="142.24" width="0.1524" layer="91"/>
+<label x="198.12" y="142.24" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>
