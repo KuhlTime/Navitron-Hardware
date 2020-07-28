@@ -5318,6 +5318,8 @@ MotionTracking device that is ideally suited for smartphones, tablets, wearable 
 <part name="TOUCH1" library="MyLib" deviceset="TOUCHPAD" device="8MM"/>
 <part name="TOUCH2" library="MyLib" deviceset="TOUCHPAD" device="8MM"/>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="SDA1V8-2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="SCL1V8-2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="PTR1" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -5393,8 +5395,7 @@ I_CHG = 500mA</text>
 <wire x1="170.18" y1="76.2" x2="119.38" y2="76.2" width="0.254" layer="97" style="shortdash"/>
 <wire x1="119.38" y1="76.2" x2="78.74" y2="76.2" width="0.254" layer="97" style="shortdash"/>
 <text x="81.28" y="106.68" size="2.54" layer="94" align="top-left">I2C Extension Header</text>
-<wire x1="170.18" y1="76.2" x2="228.6" y2="76.2" width="0.254" layer="97" style="shortdash"/>
-<wire x1="228.6" y1="76.2" x2="248.92" y2="76.2" width="0.254" layer="97" style="shortdash"/>
+<wire x1="170.18" y1="76.2" x2="248.92" y2="76.2" width="0.254" layer="97" style="shortdash"/>
 <wire x1="78.74" y1="109.22" x2="119.38" y2="109.22" width="0.254" layer="97" style="shortdash"/>
 <wire x1="119.38" y1="109.22" x2="119.38" y2="76.2" width="0.254" layer="97" style="shortdash"/>
 <text x="205.74" y="-83.82" size="1.778" layer="97" font="vector">VIN 1.8V to 5.5V</text>
@@ -5445,9 +5446,8 @@ I_CHG = 500mA</text>
 <text x="109.22" y="-55.88" size="1.27" layer="97">Orginal Mosfet: ROHM RE1C002UN</text>
 <text x="190.5" y="-93.98" size="2.54" layer="94" align="top-left">Interrupt Level Shifting</text>
 <wire x1="187.96" y1="-137.16" x2="187.96" y2="-200.66" width="0.254" layer="97" style="shortdash"/>
-<wire x1="119.38" y1="109.22" x2="228.6" y2="109.22" width="0.254" layer="97" style="shortdash"/>
+<wire x1="119.38" y1="109.22" x2="248.92" y2="109.22" width="0.254" layer="97" style="shortdash"/>
 <text x="121.92" y="106.68" size="2.54" layer="94" align="top-left">Testpoints</text>
-<wire x1="228.6" y1="109.22" x2="228.6" y2="76.2" width="0.254" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="ESP32" gate="G$1" x="43.18" y="132.08" smashed="yes">
@@ -5971,6 +5971,14 @@ I_CHG = 500mA</text>
 <instance part="JP6" gate="G$1" x="147.32" y="-152.4" smashed="yes">
 <attribute name="NAME" x="140.97" y="-146.685" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.97" y="-157.48" size="1.778" layer="96"/>
+</instance>
+<instance part="SDA1V8-2" gate="G$1" x="233.68" y="88.9" smashed="yes">
+<attribute name="NAME" x="232.664" y="82.55" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="234.95" y="86.36" size="1.778" layer="97"/>
+</instance>
+<instance part="SCL1V8-2" gate="G$1" x="238.76" y="88.9" smashed="yes">
+<attribute name="NAME" x="237.744" y="82.55" size="1.778" layer="95" rot="R90"/>
+<attribute name="TP_SIGNAL_NAME" x="240.03" y="86.36" size="1.778" layer="97"/>
 </instance>
 </instances>
 <busses>
@@ -6841,6 +6849,12 @@ I_CHG = 500mA</text>
 <wire x1="160.02" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
 <label x="157.48" y="93.98" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SDA1V8-2" gate="G$1" pin="TP"/>
+<wire x1="233.68" y1="91.44" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="93.98" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
+<label x="231.14" y="93.98" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="SCL1V8" class="0">
 <segment>
@@ -6862,6 +6876,12 @@ I_CHG = 500mA</text>
 <wire x1="165.1" y1="91.44" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="99.06" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
 <label x="157.48" y="99.06" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SCL1V8-2" gate="G$1" pin="TP"/>
+<wire x1="238.76" y1="91.44" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="99.06" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
+<label x="231.14" y="99.06" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="DI" class="0">
