@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -2916,7 +2916,6 @@ einem neuen Namen ab.
 <contactref element="C1" pad="1"/>
 <contactref element="R1" pad="1"/>
 <contactref element="T2" pad="3"/>
-<wire x1="27.22" y1="26" x2="27.17" y2="26.05" width="0.3048" layer="1"/>
 <wire x1="27.22" y1="26" x2="27.22" y2="30.22" width="0.3048" layer="1"/>
 <wire x1="27.22" y1="30.22" x2="28" y2="31" width="0.3048" layer="1"/>
 <wire x1="28" y1="31" x2="28" y2="46" width="0.3048" layer="1"/>
@@ -3096,7 +3095,6 @@ einem neuen Namen ab.
 <vertex x="35" y="60" curve="-90"/>
 <vertex x="60" y="35" curve="-90"/>
 </polygon>
-<wire x1="64.5" y1="35.5" x2="64" y2="35.5" width="0.3048" layer="16"/>
 <contactref element="C10" pad="1"/>
 <contactref element="R21" pad="2"/>
 <wire x1="64" y1="35.5" x2="60.5" y2="35.5" width="0.4064" layer="16"/>
@@ -3118,7 +3116,6 @@ einem neuen Namen ab.
 <wire x1="61" y1="28" x2="66" y2="33" width="0.4064" layer="16"/>
 <wire x1="66" y1="33" x2="66" y2="35" width="0.4064" layer="16"/>
 <wire x1="66" y1="35" x2="65.5" y2="35.5" width="0.4064" layer="16"/>
-<wire x1="65.5" y1="35.5" x2="64" y2="35.5" width="0.4064" layer="16"/>
 <wire x1="56" y1="28" x2="61" y2="28" width="0.4064" layer="16"/>
 <contactref element="AP2112K-1.8V" pad="1"/>
 <contactref element="AP2112K-1.8V" pad="3"/>
@@ -3140,6 +3137,7 @@ einem neuen Namen ab.
 <vertex x="58.7" y="36"/>
 <vertex x="59.3" y="36"/>
 </polygon>
+<wire x1="65.5" y1="35.5" x2="64" y2="35.5" width="0.4064" layer="16"/>
 </signal>
 <signal name="TO_T2">
 <contactref element="R2" pad="2"/>
@@ -3298,16 +3296,14 @@ einem neuen Namen ab.
 <signal name="SCL">
 <contactref element="ESP32" pad="36"/>
 <contactref element="J3" pad="4"/>
-<wire x1="64" y1="33.5" x2="63.5" y2="33.5" width="0.2032" layer="16"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="R16" pad="1"/>
-<wire x1="64" y1="33.5" x2="61.5" y2="33.5" width="0.3048" layer="16"/>
 <via x="52" y="32" extent="1-16" drill="0.25"/>
 <wire x1="50.4" y1="33.6" x2="52" y2="32" width="0.3048" layer="1"/>
 <wire x1="50.4" y1="33.6" x2="50.4" y2="34" width="0.3048" layer="1"/>
 <wire x1="59" y1="31" x2="53" y2="31" width="0.3048" layer="16"/>
 <wire x1="53" y1="31" x2="52" y2="32" width="0.3048" layer="16"/>
-<wire x1="61.5" y1="33.5" x2="59" y2="31" width="0.3048" layer="16"/>
+<wire x1="59" y1="31" x2="61.5" y2="33.5" width="0.3048" layer="16"/>
 <wire x1="49" y1="32" x2="47" y2="34" width="0.3048" layer="1"/>
 <wire x1="47" y1="34" x2="47" y2="45" width="0.3048" layer="1"/>
 <wire x1="47" y1="45" x2="45.28" y2="46.72" width="0.3048" layer="1"/>
@@ -3318,6 +3314,7 @@ einem neuen Namen ab.
 <wire x1="50" y1="32" x2="49" y2="32" width="0.3048" layer="1"/>
 <contactref element="SCL1" pad="TP"/>
 <wire x1="58" y1="30" x2="59" y2="31" width="0.3048" layer="16"/>
+<wire x1="61.5" y1="33.5" x2="64" y2="33.5" width="0.3048" layer="16"/>
 </signal>
 <signal name="VIN">
 <contactref element="AP2112K-3.3" pad="1"/>
@@ -3377,7 +3374,6 @@ einem neuen Namen ab.
 <wire x1="18" y1="38.683" x2="18" y2="35" width="0.508" layer="16"/>
 <wire x1="18" y1="38.683" x2="16.103" y2="40.58" width="0.508" layer="1"/>
 <wire x1="16.103" y1="40.58" x2="13.99" y2="40.58" width="0.508" layer="1"/>
-<wire x1="13.91" y1="45.39" x2="14" y2="45.3" width="0.3048" layer="1"/>
 <wire x1="15.74" y1="35.65" x2="17.35" y2="35.65" width="0.508" layer="1"/>
 <wire x1="17.35" y1="35.65" x2="18" y2="35" width="0.508" layer="1"/>
 <via x="18" y="35" extent="1-16" drill="0.25"/>
@@ -3420,7 +3416,8 @@ einem neuen Namen ab.
 <wire x1="32" y1="60" x2="31.58" y2="59.58" width="0.4064" layer="1"/>
 <wire x1="31.58" y1="59.58" x2="30.18" y2="59.58" width="0.4064" layer="1"/>
 <wire x1="18.6" y1="42.4501" x2="18.6" y2="48" width="0.4064" layer="1"/>
-<wire x1="18.6" y1="48" x2="18.6" y2="53.6" width="0.4064" layer="1"/>
+<wire x1="18.6" y1="48" x2="18.6" y2="52" width="0.4064" layer="1"/>
+<wire x1="18.6" y1="52" x2="18.6" y2="53.6" width="0.4064" layer="1"/>
 <wire x1="23" y1="58" x2="29" y2="58" width="0.4064" layer="1"/>
 <wire x1="29" y1="58" x2="30.18" y2="59.18" width="0.4064" layer="1"/>
 <wire x1="30.18" y1="59.18" x2="30.18" y2="59.58" width="0.3048" layer="1"/>
@@ -3429,7 +3426,6 @@ einem neuen Namen ab.
 <wire x1="21.92" y1="45.08" x2="19" y2="48" width="0.4064" layer="1"/>
 <wire x1="19" y1="48" x2="18.6" y2="48" width="0.4064" layer="1"/>
 <contactref element="V_BATT" pad="TP"/>
-<wire x1="18.6" y1="42.4501" x2="18.6" y2="52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHAR_LED_VIN">
 <contactref element="CHARGING" pad="A"/>
@@ -3455,8 +3451,7 @@ einem neuen Namen ab.
 <contactref element="C9" pad="1"/>
 <polygon width="0.15" layer="1">
 <vertex x="49" y="47"/>
-<vertex x="57" y="47"/>
-<vertex x="58" y="46"/>
+<vertex x="58" y="47"/>
 <vertex x="58" y="34"/>
 <vertex x="56" y="32"/>
 <vertex x="50" y="32"/>
@@ -3471,7 +3466,6 @@ einem neuen Namen ab.
 <contactref element="R15" pad="2"/>
 <contactref element="R20" pad="2"/>
 <wire x1="58.15" y1="40.5" x2="58.15" y2="38" width="0.3048" layer="1"/>
-<wire x1="52.44" y1="46.992" x2="52.448" y2="47" width="0.3048" layer="1"/>
 <contactref element="AP2112K-1.8V" pad="5"/>
 <contactref element="1.8V" pad="TP"/>
 <polygon width="0.15" layer="1" pour="cutout">
@@ -3614,7 +3608,6 @@ einem neuen Namen ab.
 <signal name="WS8_9">
 <contactref element="WS8" pad="2"/>
 <contactref element="WS9" pad="4"/>
-<wire x1="7.577" y1="43.007803125" x2="7.77564375" y2="43.487371875" width="0.2" layer="1" curve="-45"/>
 <wire x1="7.577" y1="36.6" x2="7.77564375" y2="43.487371875" width="0.3048" layer="1"/>
 </signal>
 <signal name="WS9_10">
@@ -3625,7 +3618,6 @@ einem neuen Namen ab.
 <signal name="WS10_11">
 <contactref element="WS10" pad="2"/>
 <contactref element="WS11" pad="4"/>
-<wire x1="9.9466375" y1="21.27138125" x2="9.74799375" y2="21.75095" width="0.2" layer="1" curve="-45"/>
 <wire x1="14.4776375" y1="16.74038125" x2="9.74799375" y2="21.75095" width="0.3048" layer="1"/>
 </signal>
 <signal name="WS11_12">
@@ -3653,7 +3645,6 @@ einem neuen Namen ab.
 <signal name="WS14_15">
 <contactref element="WS14" pad="2"/>
 <contactref element="WS15" pad="4"/>
-<wire x1="52.780046875" y1="14.27899375" x2="53.259615625" y2="14.4776375" width="0.2" layer="1" curve="-45"/>
 <wire x1="48.249046875" y1="9.74799375" x2="53.259615625" y2="14.4776375" width="0.3048" layer="1"/>
 </signal>
 <signal name="WS15_16">
@@ -3793,22 +3784,6 @@ einem neuen Namen ab.
 <signal name="AUX_CL">
 <contactref element="IMU" pad="7"/>
 </signal>
-<signal name="TOUCH8">
-<contactref element="TOUCH1" pad="TOUCH"/>
-<wire x1="25" y1="55" x2="25" y2="43" width="0.3048" layer="16"/>
-<wire x1="25" y1="43" x2="24" y2="42" width="0.3048" layer="16"/>
-<via x="24" y="42" extent="1-16" drill="0.25"/>
-<wire x1="24" y1="42" x2="24" y2="41" width="0.3048" layer="1"/>
-<wire x1="24" y1="41" x2="24.63" y2="40.37" width="0.3048" layer="1"/>
-</signal>
-<signal name="TOUCH9">
-<contactref element="TOUCH2" pad="TOUCH"/>
-<wire x1="45" y1="55" x2="39" y2="49" width="0.3048" layer="16"/>
-<wire x1="33" y1="49" x2="24" y2="40" width="0.3048" layer="16"/>
-<via x="24" y="40" extent="1-16" drill="0.25"/>
-<wire x1="24" y1="40" x2="24.9" y2="39.1" width="0.3048" layer="1"/>
-<wire x1="39" y1="49" x2="33" y2="49" width="0.3048" layer="16"/>
-</signal>
 <signal name="T2">
 <contactref element="ESP32" pad="24"/>
 <contactref element="JP6" pad="1"/>
@@ -3827,9 +3802,23 @@ einem neuen Namen ab.
 </signal>
 <signal name="T8">
 <contactref element="ESP32" pad="8"/>
+<contactref element="TOUCH1" pad="TOUCH"/>
+<wire x1="25" y1="55" x2="25" y2="43" width="0.3048" layer="16"/>
+<wire x1="25" y1="43" x2="24" y2="42" width="0.3048" layer="16"/>
+<via x="24" y="42" extent="1-16" drill="0.25"/>
+<wire x1="24" y1="42" x2="24" y2="41" width="0.3048" layer="1"/>
+<wire x1="24" y1="41" x2="24.63" y2="40.37" width="0.3048" layer="1"/>
+<wire x1="24.63" y1="40.37" x2="26.5" y2="40.37" width="0.3048" layer="1"/>
 </signal>
 <signal name="T9">
 <contactref element="ESP32" pad="9"/>
+<contactref element="TOUCH2" pad="TOUCH"/>
+<wire x1="45" y1="55" x2="39" y2="49" width="0.3048" layer="16"/>
+<wire x1="33" y1="49" x2="24" y2="40" width="0.3048" layer="16"/>
+<via x="24" y="40" extent="1-16" drill="0.25"/>
+<wire x1="24" y1="40" x2="24.9" y2="39.1" width="0.3048" layer="1"/>
+<wire x1="39" y1="49" x2="33" y2="49" width="0.3048" layer="16"/>
+<wire x1="24.9" y1="39.1" x2="26.5" y2="39.1" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -3840,39 +3829,6 @@ einem neuen Namen ab.
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="5,1,991e81840680e4e5"/>
-<approved hash="5,1,6d1c75840e80ece7"/>
-<approved hash="5,1,e8abdbd78dba83a4"/>
-<approved hash="5,1,bde4825e2960f2da"/>
-<approved hash="5,1,12b6758400f0933d"/>
-<approved hash="5,1,e6b4818408f09b3f"/>
-<approved hash="5,1,ee609623bcdf3962"/>
-<approved hash="5,1,906c9623bcdf476e"/>
-<approved hash="5,1,c154c403824028ea"/>
-<approved hash="5,1,b2736e69f318f905"/>
-<approved hash="5,1,6b77c652290378ef"/>
-<approved hash="5,1,71145868976fc047"/>
-<approved hash="5,1,0f2edf0d30c1475c"/>
-<approved hash="5,1,beb18af9eaeab56d"/>
-<approved hash="5,1,57ca95108dfe3c37"/>
-<approved hash="5,1,a10d8e84f219bacf"/>
-<approved hash="5,1,eb8dbe81cfd99f79"/>
-<approved hash="5,1,6d8b7c21acdf4489"/>
-<approved hash="5,1,451899b61e07dabe"/>
-<approved hash="5,1,711a69840680e4e1"/>
-<approved hash="5,1,6f9f7c21acdf469d"/>
-<approved hash="5,1,c901c3fed5dd2311"/>
-<approved hash="5,1,0eb0698408f09b3b"/>
-<approved hash="5,1,828d28df5dbaa386"/>
-<approved hash="5,1,be0346468d222ded"/>
-<approved hash="5,1,11937c21acdf3891"/>
-<approved hash="5,1,b3a8915cb8d5816b"/>
-<approved hash="5,1,13a7be8229030486"/>
-<approved hash="5,1,92789623bcdf457a"/>
-<approved hash="5,1,868611c5401f155f"/>
-<approved hash="5,1,c9fb200c9654331c"/>
-<approved hash="5,1,fe567ff352426d8f"/>
-<approved hash="5,1,db2a3a6ab7c647fd"/>
 <approved hash="21,19,1d431f411f411d43"/>
 <approved hash="21,19,7b15791779177b15"/>
 <approved hash="21,19,1ac318c118c11ac3"/>
@@ -3881,9 +3837,7 @@ einem neuen Namen ab.
 <approved hash="21,19,0112031003100112"/>
 <approved hash="21,19,fb22f920f920fb22"/>
 <approved hash="21,19,fb1af918f918fb1a"/>
-<approved hash="21,19,e5f7e5f7e7f5e7f5"/>
 <approved hash="21,19,1579177b177b1579"/>
-<approved hash="21,19,84fe86fc86fc84fe"/>
 <approved hash="4,1,16621b5bc3cb93e5"/>
 <approved hash="4,1,b7d913d06f927bb2"/>
 <approved hash="4,1,6fccc8195180ab5b"/>
@@ -3892,7 +3846,6 @@ einem neuen Namen ab.
 <approved hash="4,16,6ae8b95960c07a98"/>
 <approved hash="4,16,380a5de571e7d1c0"/>
 <approved hash="4,16,470199f79f829a2d"/>
-<approved hash="4,16,08b1d169e4f50bfe"/>
 <approved hash="4,16,16621b5bc3cb93e5"/>
 <approved hash="4,16,b7d913d06f927bb2"/>
 <approved hash="4,16,6fccc8195180ab5b"/>
@@ -3900,8 +3853,6 @@ einem neuen Namen ab.
 <approved hash="4,16,7cb0a1b8ecc89cdc"/>
 <approved hash="4,16,fb2c4ef6c53dd297"/>
 <approved hash="4,16,1a6cb826a9ceac62"/>
-<approved hash="4,16,c82b57a66e9c9b77"/>
-<approved hash="4,16,bb52e97b71cbe52a"/>
 <approved hash="19,1,336daf975e85e52b"/>
 <approved hash="19,1,c2307d51fb366509"/>
 <approved hash="19,1,f9a93cd2f9389d07"/>
@@ -3911,6 +3862,40 @@ einem neuen Namen ab.
 <approved hash="19,1,0cbe04b1f6d9dcc5"/>
 <approved hash="19,1,0e28c991fc0a6daa"/>
 <approved hash="2,20,7bda7c7c7a7a7ddc"/>
+<approved hash="5,1,08b24f49d1ede019"/>
+<approved hash="5,1,7f169c0aa3dafe12"/>
+<approved hash="5,1,c93bc90eda36be1c"/>
+<approved hash="5,1,7f3d9c5583fdf075"/>
+<approved hash="5,1,13841b87f65ed61a"/>
+<approved hash="5,1,f2077b077beab5f2"/>
+<approved hash="5,1,ffb91a840b391d01"/>
+<approved hash="5,1,c3bb268403391d03"/>
+<approved hash="5,1,1cca0d6d64df4488"/>
+<approved hash="5,1,32743a77d7a137ea"/>
+<approved hash="5,1,1ede0d6d64df469c"/>
+<approved hash="5,1,b88758c1baa3b2af"/>
+<approved hash="5,1,60d20d6d64df3890"/>
+<approved hash="5,1,615821abe5fe7df1"/>
+<approved hash="5,1,57231dcb0741a52a"/>
+<approved hash="5,1,b9fcb90969112cfc"/>
+<approved hash="5,1,82270be70bcac512"/>
+<approved hash="5,1,8f591a840bb96d21"/>
+<approved hash="5,1,011001b385fe7df1"/>
+<approved hash="5,1,597779319b539350"/>
+<approved hash="5,1,01226d62e4df3960"/>
+<approved hash="5,1,7f2e6d62e4df476c"/>
+<approved hash="5,1,b35b268403b96d23"/>
+<approved hash="5,1,c09ae837d548c3d6"/>
+<approved hash="5,1,a75d32840bb96d25"/>
+<approved hash="5,1,7d3a6d62e4df4578"/>
+<approved hash="5,1,d7bd32840b391d05"/>
+<approved hash="4,16,fbb7f2b7687b911d"/>
+<approved hash="4,16,9b62f9614af9497e"/>
+<approved hash="4,16,d9fdb41229268d3f"/>
+<approved hash="19,1,68ff5d565ad87dd1"/>
+<approved hash="19,1,06674fdb66463750"/>
+<approved hash="6,1,a6bf630ae88821c3"/>
+<approved hash="6,1,db7cd882d882db7c"/>
 </errors>
 </board>
 </drawing>

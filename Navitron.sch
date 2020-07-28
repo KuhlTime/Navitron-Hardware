@@ -7208,20 +7208,6 @@ I_CHG = 500mA</text>
 <wire x1="137.16" y1="-116.84" x2="132.08" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TOUCH8" class="0">
-<segment>
-<wire x1="127" y1="-175.26" x2="124.46" y2="-175.26" width="0.1524" layer="91"/>
-<label x="124.46" y="-175.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="TOUCH1" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="TOUCH9" class="0">
-<segment>
-<wire x1="160.02" y1="-175.26" x2="157.48" y2="-175.26" width="0.1524" layer="91"/>
-<label x="157.48" y="-175.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="TOUCH2" gate="G$1" pin="P$1"/>
-</segment>
-</net>
 <net name="T2" class="0">
 <segment>
 <pinref part="ESP32" gate="G$1" pin="IO2"/>
@@ -7252,12 +7238,22 @@ I_CHG = 500mA</text>
 <wire x1="63.5" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
 <label x="66.04" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="127" y1="-175.26" x2="124.46" y2="-175.26" width="0.1524" layer="91"/>
+<label x="124.46" y="-175.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="TOUCH1" gate="G$1" pin="P$1"/>
+</segment>
 </net>
 <net name="T9" class="0">
 <segment>
 <pinref part="ESP32" gate="G$1" pin="IO33"/>
 <wire x1="63.5" y1="106.68" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
 <label x="66.04" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="-175.26" x2="157.48" y2="-175.26" width="0.1524" layer="91"/>
+<label x="157.48" y="-175.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="TOUCH2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>
