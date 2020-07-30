@@ -5221,7 +5221,7 @@ MotionTracking device that is ideally suited for smartphones, tablets, wearable 
 <part name="R11" library="SparkFun-Resistors" deviceset="5.1KOHM" device="5.1KOHM-0603-1/10W-1%" value="2k"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="4.7uF"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="CONN_02" device="-JST-2MM-SMT" value="LiPo"/>
-<part name="CHARGING" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="CHARGING" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="GREEN"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="1.0uF"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -5267,8 +5267,8 @@ MotionTracking device that is ideally suited for smartphones, tablets, wearable 
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" deviceset="1.8V" device=""/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="RX1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="YELLOW"/>
-<part name="TX1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="YELLOW"/>
+<part name="RX1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="BLUE"/>
+<part name="TX1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="BLUE"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="10MOHM" device="-0603-1/10W-5%" value="10MOHM-0603-1/10W-5%"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="10MOHM" device="-0603-1/10W-5%" value="1k"/>
 <part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" value="LED"/>
@@ -5433,7 +5433,8 @@ I_CHG = 500mA</text>
 <wire x1="106.68" y1="-45.72" x2="106.68" y2="-91.44" width="0.254" layer="97" style="shortdash"/>
 <text x="2.54" y="-48.26" size="2.54" layer="94" rot="MR270" align="top-left">LED Ring</text>
 <wire x1="106.68" y1="-91.44" x2="106.68" y2="-137.16" width="0.254" layer="97" style="shortdash"/>
-<wire x1="106.68" y1="-137.16" x2="106.68" y2="-231.14" width="0.254" layer="97" style="shortdash"/>
+<wire x1="106.68" y1="-137.16" x2="106.68" y2="-160.02" width="0.254" layer="97" style="shortdash"/>
+<wire x1="106.68" y1="-160.02" x2="106.68" y2="-231.14" width="0.254" layer="97" style="shortdash"/>
 <wire x1="106.68" y1="-91.44" x2="187.96" y2="-91.44" width="0.254" layer="97" style="shortdash"/>
 <wire x1="187.96" y1="-91.44" x2="187.96" y2="-45.72" width="0.254" layer="97" style="shortdash"/>
 <text x="109.22" y="-48.26" size="2.54" layer="94" align="top-left">I2C Level Shifter - IMU</text>
@@ -5445,9 +5446,13 @@ I_CHG = 500mA</text>
 <text x="109.22" y="-99.06" size="1.27" layer="97">SparkFun 9DoF IMU Breakout - ICM-20948 (Qwiic)</text>
 <text x="109.22" y="-55.88" size="1.27" layer="97">Orginal Mosfet: ROHM RE1C002UN</text>
 <text x="190.5" y="-93.98" size="2.54" layer="94" align="top-left">Interrupt Level Shifting</text>
-<wire x1="187.96" y1="-137.16" x2="187.96" y2="-200.66" width="0.254" layer="97" style="shortdash"/>
+<wire x1="187.96" y1="-137.16" x2="187.96" y2="-160.02" width="0.254" layer="97" style="shortdash"/>
+<wire x1="187.96" y1="-160.02" x2="187.96" y2="-200.66" width="0.254" layer="97" style="shortdash"/>
 <wire x1="119.38" y1="109.22" x2="248.92" y2="109.22" width="0.254" layer="97" style="shortdash"/>
-<text x="121.92" y="106.68" size="2.54" layer="94" align="top-left">Testpoints</text>
+<text x="121.92" y="106.68" size="2.54" layer="94" align="top-left">Testpads</text>
+<text x="109.22" y="-139.7" size="2.54" layer="94" align="top-left">Touch Pins</text>
+<wire x1="106.68" y1="-160.02" x2="187.96" y2="-160.02" width="0.254" layer="97" style="shortdash"/>
+<text x="53.34" y="30.48" size="1.778" layer="95">DMG2307</text>
 </plain>
 <instances>
 <instance part="ESP32" gate="G$1" x="43.18" y="132.08" smashed="yes">
@@ -5797,7 +5802,6 @@ I_CHG = 500mA</text>
 </instance>
 <instance part="R9" gate="G$1" x="208.28" y="129.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="206.756" y="129.54" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="209.804" y="129.54" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="R18" gate="G$1" x="223.52" y="129.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="221.996" y="129.54" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -5962,15 +5966,15 @@ I_CHG = 500mA</text>
 <attribute name="NAME" x="139.7" y="-106.426" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="139.7" y="-124.714" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="TOUCH1" gate="G$1" x="137.16" y="-175.26" smashed="yes">
-<attribute name="NAME" x="137.16" y="-167.64" size="1.778" layer="95" align="bottom-center"/>
+<instance part="TOUCH1" gate="G$1" x="147.32" y="-149.86" smashed="yes">
+<attribute name="NAME" x="147.32" y="-142.24" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="TOUCH2" gate="G$1" x="170.18" y="-175.26" smashed="yes">
-<attribute name="NAME" x="170.18" y="-167.64" size="1.778" layer="95" align="bottom-center"/>
+<instance part="TOUCH2" gate="G$1" x="175.26" y="-149.86" smashed="yes">
+<attribute name="NAME" x="175.26" y="-142.24" size="1.778" layer="95" align="bottom-center"/>
 </instance>
-<instance part="JP6" gate="G$1" x="147.32" y="-152.4" smashed="yes">
-<attribute name="NAME" x="140.97" y="-146.685" size="1.778" layer="95"/>
-<attribute name="VALUE" x="140.97" y="-157.48" size="1.778" layer="96"/>
+<instance part="JP6" gate="G$1" x="124.46" y="-152.4" smashed="yes">
+<attribute name="NAME" x="118.11" y="-146.685" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="-157.48" size="1.778" layer="96"/>
 </instance>
 <instance part="SDA1V8-2" gate="G$1" x="233.68" y="88.9" smashed="yes">
 <attribute name="NAME" x="232.664" y="82.55" size="1.778" layer="95" rot="R90"/>
@@ -7236,8 +7240,8 @@ I_CHG = 500mA</text>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="-149.86" x2="137.16" y2="-149.86" width="0.1524" layer="91"/>
-<label x="137.16" y="-149.86" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="121.92" y1="-149.86" x2="114.3" y2="-149.86" width="0.1524" layer="91"/>
+<label x="114.3" y="-149.86" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="T3" class="0">
@@ -7248,8 +7252,8 @@ I_CHG = 500mA</text>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="-152.4" x2="137.16" y2="-152.4" width="0.1524" layer="91"/>
-<label x="137.16" y="-152.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="121.92" y1="-152.4" x2="114.3" y2="-152.4" width="0.1524" layer="91"/>
+<label x="114.3" y="-152.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="T8" class="0">
@@ -7259,8 +7263,8 @@ I_CHG = 500mA</text>
 <label x="66.04" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="127" y1="-175.26" x2="124.46" y2="-175.26" width="0.1524" layer="91"/>
-<label x="124.46" y="-175.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="137.16" y1="-149.86" x2="134.62" y2="-149.86" width="0.1524" layer="91"/>
+<label x="134.62" y="-149.86" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="TOUCH1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -7271,8 +7275,8 @@ I_CHG = 500mA</text>
 <label x="66.04" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="-175.26" x2="157.48" y2="-175.26" width="0.1524" layer="91"/>
-<label x="157.48" y="-175.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="165.1" y1="-149.86" x2="162.56" y2="-149.86" width="0.1524" layer="91"/>
+<label x="162.56" y="-149.86" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="TOUCH2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
