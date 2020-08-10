@@ -5339,7 +5339,7 @@ MotionTracking device that is ideally suited for smartphones, tablets, wearable 
 <wire x1="223.52" y1="15.24" x2="248.92" y2="15.24" width="0.254" layer="94"/>
 <wire x1="223.52" y1="7.62" x2="223.52" y2="15.24" width="0.254" layer="94"/>
 <text x="226.06" y="10.16" size="2.54" layer="94">Rev:</text>
-<text x="246.38" y="10.16" size="2.54" layer="94" rot="MR0">v1</text>
+<text x="246.38" y="10.16" size="2.54" layer="94" rot="MR0">v2</text>
 <wire x1="170.18" y1="15.24" x2="170.18" y2="22.86" width="0.254" layer="94"/>
 <wire x1="170.18" y1="22.86" x2="248.92" y2="22.86" width="0.254" layer="94"/>
 <text x="172.72" y="17.78" size="2.54" layer="94">Ausarbeitung für Embedded Systems 1</text>
@@ -5416,7 +5416,7 @@ I_CHG = 500mA</text>
 <wire x1="223.52" y1="-215.9" x2="248.92" y2="-215.9" width="0.254" layer="94"/>
 <wire x1="223.52" y1="-223.52" x2="223.52" y2="-215.9" width="0.254" layer="94"/>
 <text x="226.06" y="-220.98" size="2.54" layer="94">Rev:</text>
-<text x="246.38" y="-220.98" size="2.54" layer="94" rot="MR0">v1</text>
+<text x="246.38" y="-220.98" size="2.54" layer="94" rot="MR0">v2</text>
 <wire x1="170.18" y1="-215.9" x2="170.18" y2="-208.28" width="0.254" layer="94"/>
 <wire x1="170.18" y1="-208.28" x2="248.92" y2="-208.28" width="0.254" layer="94"/>
 <text x="172.72" y="-213.36" size="2.54" layer="94">Ausarbeitung für Embedded Systems 1</text>
